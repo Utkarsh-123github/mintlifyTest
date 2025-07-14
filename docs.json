@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Utkarsh GameVerse API Documentation",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,92 +11,53 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Introduction",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "API Endpoints",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "api-reference/endpoint/register-a-studio",
+              "api-reference/endpoint/get-player-profile",
+              "api-reference/endpoint/update-player-profile",
+              "api-reference/endpoint/delete-player-account",
+              "api-reference/endpoint/list-all-games",
+              "api-reference/endpoint/publish-a-new-game",
+              "api-reference/endpoint/get-game-details",
+              "api-reference/endpoint/update-game-info",
+              "api-reference/endpoint/delete-a-game",
+              "api-reference/endpoint/create-a-new-match",
+              "api-reference/endpoint/get-match-details",
+              "api-reference/endpoint/submit-match-results",
+              "api-reference/endpoint/get-current-season-leaderboard",
+              "api-reference/endpoint/get-leaderboard-for-a-season",
+              "api-reference/endpoint/list-all-achievements",
+              "api-reference/endpoint/get-player-achievements",
+              "api-reference/endpoint/register-a-studio",
+              "api-reference/endpoint/get-studio-info",
+              "api-reference/endpoint/delete-a-studio",
+              "api-reference/endpoint/list-games-published-by-studio",
+              "api-reference/endpoint/delete-a-specific-game-by-studio"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "light": "/favicon.svg",
+    "dark": "/favicon.svg"
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/UtkarshTiwari90",
+      "github": "https://github.com/Utkarsh-123github",
+      "linkedin": "https://www.linkedin.com/in/utkarsh-tiwari-b5b034250/"
     }
   }
 }

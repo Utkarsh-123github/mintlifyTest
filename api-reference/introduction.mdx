@@ -1,28 +1,51 @@
 ---
-title: 'Introduction'
-description: 'Example section for showcasing API endpoints'
+title: 'Game-Verse API Documentation'
+description: 'Complete REST API reference for the Game-Verse gaming platform'
 ---
 
 <Note>
-  If you're not looking to build API reference documentation, you can delete
-  this section by removing the api-reference folder.
+  Welcome to the Game-Verse API documentation! This comprehensive guide covers all endpoints for managing players, games, matches, leaderboards, achievements, and studios.
 </Note>
 
-## Welcome
+## Welcome to Game-Verse
 
-There are two ways to build API documentation: [OpenAPI](https://mintlify.com/docs/api-playground/openapi/setup) and [MDX components](https://mintlify.com/docs/api-playground/mdx/configuration). For the starter kit, we are using the following OpenAPI specification.
+Game-Verse is a comprehensive gaming platform API that supports puzzle, FPS, and racing game genres. Our REST API enables developers to build gaming applications with full support for:
+
+- **Player Management** - Registration, profiles, and account management
+- **Studio Operations** - Game studio registration and management  
+- **Game Publishing** - Publishing and managing games across multiple genres
+- **Match Handling** - Creating matches and submitting results
+- **Leaderboard System** - Season-based ranking and competition tracking
+- **Achievement System** - Player achievements and progress tracking
+- **Platform Security** - Bearer token authentication and secure endpoints
 
 <Card
-  title="Plant Store Endpoints"
-  icon="leaf"
-  href="https://github.com/mintlify/starter/blob/main/api-reference/openapi.json"
+  title="Game-Verse OpenAPI Specification"
+  icon="gamepad-2"
+  href="./openapi.json"
 >
-  View the OpenAPI specification file
+  View the complete OpenAPI specification for all Game-Verse endpoints
 </Card>
+
+## API Base URL
+
+All API requests should be made to our mock server endpoint:
+
+```
+https://stoplight.io/mocks/utkarshgameverse/gameverse/9113306/
+```
 
 ## Authentication
 
-All API endpoints are authenticated using Bearer tokens and picked up from the specification file.
+All API endpoints require authentication using Bearer tokens. Include your token in the Authorization header:
+
+```json
+{
+  "Authorization": "Bearer YOUR_JWT_TOKEN"
+}
+```
+
+The authentication scheme is defined in our OpenAPI specification:
 
 ```json
 "security": [
@@ -31,3 +54,24 @@ All API endpoints are authenticated using Bearer tokens and picked up from the s
   }
 ]
 ```
+
+## API Structure
+
+Our API is organized into logical groups:
+
+- **Players** (`/players`) - Player registration, profiles, and achievements
+- **Games** (`/games`) - Game catalog and management
+- **Matches** (`/matches`) - Match creation and result submission  
+- **Leaderboards** (`/leaderboards`) - Ranking and season data
+- **Achievements** (`/achievements`) - Achievement definitions and player progress
+- **Studios** (`/studios`) - Game studio management and game publishing
+
+## Getting Started
+
+1. **Register a Studio** - Start by registering your game studio
+2. **Publish Games** - Add your games to the Game-Verse platform
+3. **Register Players** - Enable player registration for your games
+4. **Create Matches** - Set up competitive matches
+5. **Track Progress** - Monitor leaderboards and achievements
+
+Ready to dive in? Check out our endpoint documentation to start building with Game-Verse!
